@@ -36,10 +36,8 @@ class DBHelper{
             data.mobile = mobile
             data.city = city
         } else {
-            let entity =  NSEntityDescription.entity(forEntityName: "MyData",
-                                                     in:DatabaseController.managedObjectContext)
-            let data = NSManagedObject(entity: entity!,
-                                         insertInto: DatabaseController.managedObjectContext) as! MyData
+            let entity =  NSEntityDescription.entity(forEntityName: "MyData",                                               in:DatabaseController.managedObjectContext)
+            let data = NSManagedObject(entity: entity!, insertInto: DatabaseController.managedObjectContext) as! MyData
             data.name = name
             data.mobile = mobile
             data.city = city
